@@ -1295,10 +1295,15 @@ img {
 
   .hero-bg {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 1;
     border-radius: var(--radius-sm);
     max-height: 220px;
     object-fit: cover;
+  }
+
+  .hero-content {
+    grid-column: 1;
+    grid-row: 2;
   }
 
   .programs-bar {
