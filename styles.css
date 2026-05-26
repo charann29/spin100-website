@@ -1196,7 +1196,8 @@ img {
   .navbar {
     padding: 8px 20px;
     justify-content: center;
-    position: relative;
+    position: sticky;
+    top: 0;
   }
 
   .brand-logo {
