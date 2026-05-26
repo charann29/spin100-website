@@ -1240,20 +1240,6 @@ img {
     min-height: auto;
   }
 
-  .hero-bg {
-    grid-column: 1;
-    grid-row: 2;
-    border-radius: var(--radius-sm);
-    max-height: 220px;
-    object-fit: cover;
-  }
-
-  .hero-content {
-    grid-column: 1;
-    grid-row: 1;
-    max-width: 100%;
-  }
-
   .hero-content h1 {
     font-size: 42px;
     margin-bottom: 8px;
@@ -1286,6 +1272,7 @@ img {
   .hero-programs-bar {
     gap: 12px;
     margin-bottom: 12px;
+    order: 3;
   }
 
   .hero-programs-bar .item {
@@ -1296,6 +1283,22 @@ img {
   .hero-programs-bar .item .icon svg {
     width: 14px;
     height: 14px;
+  }
+
+  .hero-content {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-bg {
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: var(--radius-sm);
+    max-height: 220px;
+    object-fit: cover;
   }
 
   .programs-bar {
