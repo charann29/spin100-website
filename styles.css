@@ -1235,9 +1235,31 @@ img {
 
   .hero {
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
     gap: 16px;
     padding: 16px 20px 24px;
     min-height: auto;
+  }
+
+  .hero-content {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 100%;
+  }
+
+  .hero-bg {
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: var(--radius-sm);
+    max-height: 220px;
+    object-fit: cover;
+  }
+
+  .hero-programs-bar {
+    grid-column: 1;
+    grid-row: 3;
+    gap: 12px;
+    margin-bottom: 0;
   }
 
   .hero-content h1 {
@@ -1295,15 +1317,16 @@ img {
 
   .hero-bg {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
     border-radius: var(--radius-sm);
     max-height: 220px;
     object-fit: cover;
   }
 
-  .hero-content {
-    grid-column: 1;
-    grid-row: 2;
+  .hero-programs-bar {
+    gap: 12px;
+    margin-bottom: 12px;
+    order: 99;
   }
 
   .programs-bar {
