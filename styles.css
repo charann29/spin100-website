@@ -516,16 +516,17 @@ img {
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 48px;
-  max-width: 1040px;
+  gap: 32px;
+  max-width: 1200px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .feature-card {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 24px;
+  flex-direction: column;
+  gap: 0;
+  padding: 32px 28px;
   border-radius: var(--radius);
   background: var(--glass);
   border: 1px solid var(--border);
@@ -539,9 +540,9 @@ img {
 }
 
 .feature-card .icon {
-  width: 52px;
-  height: 52px;
-  min-width: 52px;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
   flex-shrink: 0;
   border: 1.5px solid rgba(232, 131, 58, 0.4);
   border-radius: 50%;
@@ -550,28 +551,30 @@ img {
   justify-content: center;
   color: var(--orange);
   background: var(--orange-glow);
+  margin-bottom: 20px;
 }
 
 .feature-card h3 {
-  font-size: 17px;
+  font-size: 16px;
   margin-bottom: 4px;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   color: var(--text-white);
+  line-height: 1.4;
 }
 
 .feature-card .line {
   width: 24px;
   height: 2px;
   background: linear-gradient(90deg, var(--orange), transparent);
-  margin: 8px 0;
+  margin: 10px 0 14px;
   border-radius: 1px;
 }
 
 .feature-card p {
-  font-size: 13px;
+  font-size: 13.5px;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.75;
 }
 
 /* ===== LIST SECTIONS ===== */
@@ -1038,6 +1041,65 @@ img {
   margin: 0 auto;
 }
 
+/* ===== FOUNDER'S PHILOSOPHY ===== */
+.founders-philosophy {
+  max-width: 860px;
+  margin: 0 auto 80px;
+  padding: 56px 48px;
+  text-align: left;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.founders-philosophy h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--orange);
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.founders-philosophy .underline {
+  margin: 0 0 28px;
+}
+
+.founders-philosophy p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.founders-philosophy strong {
+  color: var(--text-primary);
+  font-size: 17px;
+  display: block;
+  margin-top: 8px;
+}
+
+.founders-philosophy ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+}
+
+.founders-philosophy ul li {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 2.2;
+  padding-left: 24px;
+  position: relative;
+}
+
+.founders-philosophy ul li::before {
+  content: "\2022";
+  position: absolute;
+  left: 4px;
+  color: var(--orange);
+  font-size: 18px;
+}
+
 .about-item {
   display: flex;
   align-items: flex-start;
@@ -1367,7 +1429,7 @@ img {
   }
 
   .feature-card {
-    gap: 16px;
+    gap: 0;
   }
 
   .feature-card .icon {
@@ -1401,69 +1463,7 @@ img {
     height: 20px;
   }
 
-.founders-philosophy {
-  max-width: 900px;
-  margin: 0 auto 80px;
-  padding: 0 24px;
-  text-align: left;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.founders-philosophy h2 {
-  font-size: 40px;
-  font-weight: 700;
-  color: var(--orange);
-  margin-bottom: 24px;
-  letter-spacing: -0.5px;
-}
-
-.founders-philosophy .underline {
-  margin: 0 0 32px;
-}
-
-.founders-philosophy p {
-  font-size: 18px;
-  color: var(--text-secondary);
-  line-height: 1.9;
-  margin-bottom: 24px;
-}
-
-.founders-philosophy strong {
-  color: var(--text-primary);
-  font-size: 19px;
-  display: block;
-  margin-top: 12px;
-}
-
-.founders-philosophy ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 32px;
-  columns: 2;
-  column-gap: 48px;
-}
-
-.founders-philosophy ul li {
-  font-size: 17px;
-  color: var(--text-secondary);
-  line-height: 2.4;
-  padding-left: 24px;
-  position: relative;
-  break-inside: avoid;
-}
-
-.founders-philosophy ul li:last-child {
-  column-span: all;
-}
-
-.founders-philosophy ul li::before {
-  content: "\2022";
-  position: absolute;
-  left: 4px;
-  color: var(--orange);
-  font-size: 20px;
-}
+} /* end @media max-width: 900px */
 
 /* ===== ACADEMIC FRAMEWORK ===== */
 .framework-section {
@@ -1694,6 +1694,8 @@ img {
     display: flex;
   }
 }
+
+@media (max-width: 900px) {
 
 .about-list {
     padding: 16px 20px;
