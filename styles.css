@@ -73,7 +73,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 56px;
+  padding: 8px 56px;
   background: var(--black);
   position: sticky;
   top: 0;
@@ -87,10 +87,9 @@ img {
 }
 
 .brand-logo {
-  height: 194px;
+  height: 90px;
   width: auto;
-  margin: -60px 0;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .navbar-logo .tagline {
@@ -1044,8 +1043,8 @@ img {
 /* ===== FOUNDER'S PHILOSOPHY ===== */
 .founders-philosophy {
   max-width: 860px;
-  margin: 0 auto 80px;
-  padding: 56px 48px;
+  margin: 0 auto 40px;
+  padding: 48px 48px;
   text-align: left;
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -1263,8 +1262,8 @@ img {
   }
 
   .brand-logo {
-    height: 100px;
-    margin: -30px 0;
+    height: 64px;
+    margin: 0;
   }
 
   .nav-toggle {
@@ -1548,13 +1547,29 @@ img {
     gap: 24px;
     max-width: 500px;
   }
+
+  .framework-section {
+    padding: 32px 16px 16px;
+  }
+
+  .tagline-section {
+    padding: 32px 20px;
+  }
+
+  .gallery-section {
+    padding: 32px 20px;
+  }
+
+  .gallery-section h2 {
+    margin-bottom: 28px;
+  }
 }
 
 /* ===== WHO THRIVES ===== */
 .who-thrives {
   max-width: 900px;
-  margin: 0 auto 64px;
-  padding: 80px 24px;
+  margin: 0 auto 32px;
+  padding: 56px 24px;
   text-align: left;
   display: flex;
   gap: 64px;
@@ -1614,7 +1629,7 @@ img {
 
 @media (max-width: 768px) {
   .founders-philosophy {
-    padding: 32px 20px;
+    padding: 28px 20px;
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 16px;
@@ -1642,10 +1657,11 @@ img {
 
   .who-thrives {
     flex-direction: column;
-    gap: 20px;
-    padding: 48px 20px;
+    gap: 16px;
+    padding: 32px 20px;
     margin-left: 16px;
     margin-right: 16px;
+    margin-bottom: 24px;
     text-align: center;
   }
 
